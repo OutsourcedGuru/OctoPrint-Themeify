@@ -4,14 +4,14 @@ layout: plugin
 id: themeify
 title: Themeify
 description: Beautiful themes for octoprint
-author: Birk Johansson
+author: Outsourced Guru
 license: AGPLv3
 
 date: 2017-11-11
 
-homepage: https://github.com/birkbjo/OctoPrint-Themeify
-source: https://github.com/birkbjo/OctoPrint-Themeify
-archive: https://github.com/birkbjo/OctoPrint-Themeify/archive/master.zip
+homepage: https://github.com/OutsourcedGuru/OctoPrint-Themeify
+source: https://github.com/OutsourcedGuru/OctoPrint-Themeify
+archive: https://github.com/OutsourcedGuru/OctoPrint-Themeify/archive/master.zip
 
 tags:
 - theme
