@@ -22,28 +22,33 @@ class ThemeifyPlugin(octoprint.plugin.StartupPlugin,
     def get_settings_defaults(self):
         return dict(
             enabled=True,
-            enableCustomization=False,
+            enableCustomization=True,
             theme='discorded',
             color=[dict(
                 selector='.navbar-inner',
                 rule="background-color",
                 value="#2f3136",
-                enabled=False,
+                enabled=True,
                 deletable=False)],
             customRules=[
+                dict(
+                    selector='#temperature-graph',
+                    rule="background",
+                    value="url(https://github.com/OutsourcedGuru/OctoPrint-Themeify/raw/master/octoprint_themeify/static/img/graph-davy-jones.png) no-repeat center",
+                    enabled=True),
                 dict(
                     selector='.navbar-inner',
                     rule="background-color",
                     value="#2f3136",
-                    enabled=False),
+                    enabled=True),
                 dict(
                     selector='.accordion',
                     rule="background-color",
                     value="#2f3136",
-                    enabled=False)
+                    enabled=True)
             ],
             tabs=dict(
-                enableIcons=False,
+                enableIcons=True,
                 icons=[
                     dict(
                         domId="#temp_link",
