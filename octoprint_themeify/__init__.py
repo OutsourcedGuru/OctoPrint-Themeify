@@ -34,7 +34,7 @@ class ThemeifyPlugin(octoprint.plugin.StartupPlugin,
                 dict(
                     selector='#temperature-graph',
                     rule="background",
-                    value="url(https://github.com/OutsourcedGuru/OctoPrint-Themeify/raw/master/octoprint_themeify/static/img/graph-davy-jones.png) no-repeat center",
+                    value="url(/plugin/themeify/static/img/graph-davy-jones.png) no-repeat center",
                     enabled=True),
                 dict(
                     selector='.navbar-inner',
@@ -84,7 +84,7 @@ class ThemeifyPlugin(octoprint.plugin.StartupPlugin,
 
     def get_update_information(self):
         # Define the configuration for your plugin to use with the Software Update
-        # Plugin here. See https://github.com/foosel/OctoPrint/wiki/Plugin:-Software-Update
+        # Plugin here. See http://docs.octoprint.org/en/master/bundledplugins/softwareupdate.html
         # for details.
         return dict(
             themeify=dict(
