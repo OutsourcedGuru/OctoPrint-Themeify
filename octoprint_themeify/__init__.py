@@ -42,6 +42,11 @@ class ThemeifyPlugin(octoprint.plugin.StartupPlugin,
                     value="#2f3136",
                     enabled=True),
                 dict(
+                    selector='.nav .navbar-text',
+                    rule="color",
+                    value="#ffffff",
+                    enabled=True),
+                dict(
                     selector='.accordion',
                     rule="background-color",
                     value="#2f3136",
@@ -64,6 +69,16 @@ class ThemeifyPlugin(octoprint.plugin.StartupPlugin,
                         domId="#gcode_link",
                         enabled=True,
                         faIcon="fa fa-object-ungroup"
+                    ),
+                    dict(
+                        domId="#timelapse_link",
+                        enabled=True,
+                        faIcon="fa fa-video-camera"
+                    ),
+                    dict(
+                        domId="#tab_plugin_bedlevelvisualizer_link",
+                        enabled=True,
+                        faIcon="fa fa-solar-panel"
                     ),
                     dict(
                         domId="#term_link",
