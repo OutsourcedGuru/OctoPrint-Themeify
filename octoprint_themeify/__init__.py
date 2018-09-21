@@ -50,6 +50,36 @@ class ThemeifyPlugin(octoprint.plugin.StartupPlugin,
                     selector='.accordion',
                     rule="background-color",
                     value="#2f3136",
+                    enabled=True),
+                dict(
+                    selector='.span8',
+                    rule="width",
+                    value="880px",
+                    enabled=True),
+                dict(
+                    selector='.container',
+                    rule="width",
+                    value="1200px",
+                    enabled=True),
+                dict(
+                    selector='form.custom_control',
+                    rule="display",
+                    value="inline-block",
+                    enabled=True),
+                dict(
+                    selector='form.custom_control',
+                    rule="padding-right",
+                    value="10px",
+                    enabled=True),
+                dict(
+                    selector='div#sidebar_plugin_bedlevelingwizard_wrapper>div.accordion-heading>a:before',
+                    rule="color",
+                    value="dadadc",
+                    enabled=True),
+                dict(
+                    selector='#term .terminal #terminal-output, #term .terminal #terminal-output-lowfi',
+                    rule="min-height",
+                    value="440px",
                     enabled=True)
             ],
             tabs=dict(
@@ -73,18 +103,18 @@ class ThemeifyPlugin(octoprint.plugin.StartupPlugin,
                     dict(
                         domId="#timelapse_link",
                         enabled=True,
-                        faIcon="fa fa-video-camera"
+                        faIcon="fa fa-camera"
                     ),
                     dict(
                         domId="#tab_plugin_bedlevelvisualizer_link",
                         enabled=True,
-                        faIcon="fa fa-solar-panel"
+                        faIcon="fa fa-balance-scale"
                     ),
                     dict(
                         domId="#term_link",
                         enabled=True,
                         faIcon="fa fa-terminal"
-                    )],
+                    )]
             )
         )
 
